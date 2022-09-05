@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+</head>
+<body>
+<form >
+    <input id="number1" name="number1" type="text"  pattern="^[0-9]\d*(\.\d+)?$"/>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="customRadio1" name="sign" value="+" class="custom-control-input" checked>
+        <label class="custom-control-label" for="customRadio1">+</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="customRadio2" name="sign" value="-" class="custom-control-input">
+        <label class="custom-control-label" for="customRadio2">-</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="customRadio3" name="sign" value="*" class="custom-control-input">
+        <label class="custom-control-label" for="customRadio3">*</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="customRadio4" name="sign" value="/" class="custom-control-input">
+        <label class="custom-control-label" for="customRadio3">/</label>
+    </div>
+    <input id="number2" name="number2" type="text"  pattern="^[0-9]\d*(\.\d+)?$" />
+    <input type="submit" name="submit" value="GET" formaction="/result" formmethod="get"/>
+    <input type="submit" name="submit" value="POST" formaction="/result" formmethod="post"/>
+</form>
+</body>
+</html>
